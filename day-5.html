@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Day 5</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <p>
+    <a href="index.html">home</a>
+  </p>
+
+  <h1>Functions</h1>
+
+  <p>Functions should be familar to you from math. JavaScript has functions, too but they have a different syntax.</p>
+
+  <h3>Function from Your Math Class</h3>
+
+  <p>A function usually involves a variable an a formula. For example, look at this function for a line. </p>
+
+  <pre>
+    f(x) = .25x + 5
+  </pre>
+  <div class="graph-container">
+    <iframe src="https://www.desmos.com/calculator/16zlm38cv3?embed" width="300" height="200"
+      style="border: 1px solid #ccc" frameborder=0></iframe>
+  </div>
+  <p> At <code>x=0</code>, the function's value is 5. At <code>x=40</code>, the function's value is 15. Pop Quiz: What
+    is the value of the fuction at <code>x=20</code></p>
+
+  <p>The x axis and y axis could represent many things. In this case, we can say x is days and y is cash. If we start
+    with 5 dolars and we sell one ice cream cone a day at $0.25 a piece, our total cash will be $15 after 40 days.</p>
+
+  <p>A function is a way to say all of this in one line.</p>
+
+  <p>At x=0</p>
+  <pre>
+    f(0) = 0 * .25 + 5
+    f(0) = 5
+  </pre>
+
+  <p>At x=40</p>
+  <pre>
+    f(40) = 40 * .25 + 5
+    f(40) = 10 + 5
+    f(40) = 15
+  </pre>
+
+  <p>POP QUIZ: what is the value at x=20?</p>
+  <pre>
+    f(20) = 20 * .25 + 5
+    f(20) = ?
+  </pre>
+
+  <p>I hope you can see the power of functions here!</p>
+
+  <h3>Examples</h3>
+  <p>Here is how we write the same thing in JavaScript</p>
+  <script>
+    function f(x) {
+      return x * .25 + 5;
+    }
+
+    let y1;
+    let y2;
+    let y3;
+  </script>
+  <p>
+    For x = 0...
+    f(x) =
+    <script>
+      y1 = f(0);
+      document.write(y1);
+    </script>
+  </p>
+  <p>
+    For x = 40...
+    f(x) =
+    <script>
+      y2 = f(40);
+      document.write(y2);
+    </script>
+  </p>
+  <h4>You Try this one!</h4>
+  <p>
+    Try to use our JavaScript function to solve for x = 20.
+    <br>
+    For x = 20...
+    f(x) =
+    <script>
+    </script>
+  </p>
+  <h3>Example 2</h3>
+  <p>Let's make a new function. We will call it g(x).</p>
+  <p> Our ice cream shop raised it's prices to $5 for one cone. We still sell one cone a day. We still start with $5.
+    Our new function looks like this: </p>
+  <pre>
+    g(x) = 2 * x + 5;
+  </pre>
+  <div class="graph-container">
+    <iframe src="https://www.desmos.com/calculator/payx6fptdc?embed" width="200" height="300"
+      style="border: 1px solid #ccc" frameborder=0></iframe>
+  </div>
+  <p>Now at 5 days, g(x) will be </p>
+  <pre>
+    g(x) = 2 * 5 + 5
+    g(x) = 10 + 5
+    g(x) = 15
+  </pre>
+  <p>Now at 10 days, g(x) will be </p>
+  <pre>
+    g(x) = 2 * 10 + 5
+    g(x) = 20 + 5
+    g(x) = 25
+  </pre>
+  <h2>You Try it!</h2>
+  <script>
+    let z1;
+    let z2;
+    let z3;
+    let z4;
+    let z5;
+
+    function g(x) {
+      return x * 2 + 5;
+    }
+  </script>
+  <p>Try to find the values of g(x) for 5, 10, 15, 21, and 1001</p>
+  <p>
+    For x = 5...
+    g(x) =
+    <script>
+      z1 = g(5);
+      document.write(z1);
+    </script>
+  </p>
+  <p>
+    For x = 5...
+    g(x) =
+    <script>
+      z2 = g(10);
+      document.write(z2);
+    </script>
+  </p>
+  <h4> TODO: You try this one! </h4>
+  <p>
+    For x = 15...
+    g(x) =
+    <script>
+      z3 = g();
+      document.write();
+    </script>
+  </p>
+  <h4> TODO: You try this one! </h4>
+  <p>
+    For x = 21...
+    g(x) = ?
+    <script>
+
+    </script>
+  </p>
+  <h4> TODO: You try this one! </h4>
+  <p>
+    For x = 1001...
+    g(x) = ?
+    <script>
+
+    </script>
+  </p>
+
+  <h3>You Try it!</h3>
+  <p> If you've gotten this far, try and do one better! The ice cream shop is lowering it's prices to $1.50 a cone.
+    Write a function that will calculate the cash that the shop has earned after x days. Then caclulate that for 5, 10,
+    15, 21 and 1001 days.</p>
+
+  <h4>TODO: You try this one!</h4>
+  <p> In the space bellow, write the html tags and javascript code to make your functions. Write the code to write the
+    results of the functions to the page. </p>
+
+
+
+
+
+
+
+
+
+
+
+  <h4>Bonus:</h4>
+  <p>Try out some more functions for different business senarios. As an extra bonus, you might try two variables! For
+    example f(a,b) = a*2 + b. What could such a function represent in the business scenario?</p>
+</body>
+
+</html>
