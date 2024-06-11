@@ -22,5 +22,5 @@ Author: robert.mccreary@codex.academy
 
 * [JavaScript Operators](https://www.w3schools.com/js/js_operators.asp)
 * [JavaScript Variable](https://www.w3schools.com/js/js_variables.asp)
-* [JavaScript S]
+* [JavaScript Strings](https://www.w3schools.com/js/js_strings.asp)
 * [JavaScript Functions](https://www.w3schools.com/js/js_functions.asp)
