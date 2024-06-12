@@ -9,7 +9,7 @@ You may need to add JavaScript and HTML tags to each page to complete the assign
 
 - [x] Update Author on Readme
 - [x] Complete Day 1
-- [ ] Complete Day 2
+- [x] Complete Day 2
 - [ ] Complete Day 3
 - [ ] Complete Day 4
 - [ ] Complete Day 5
